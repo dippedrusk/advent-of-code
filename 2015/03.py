@@ -1,5 +1,5 @@
 with open('input03', 'r', encoding='utf-8') as f:
-    xs = [x for x in f.read()]
+    xs = f.read()
 
 s = (0,0)
 m = {'^': (1,0), 'v': (-1,0), '>': (0,1), '<': (0,-1)}

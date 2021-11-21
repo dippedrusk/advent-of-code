@@ -1,6 +1,6 @@
 import re
-from collections import defaultdict
 from collections import Counter
+from collections import defaultdict
 
 xs = []
 with open('input06', 'r', encoding='utf-8') as f:

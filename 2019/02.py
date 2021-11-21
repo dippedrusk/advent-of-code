@@ -17,6 +17,7 @@ def get_output(integers):
     return integers[0]
 
 print('part 1')
+# pylint: disable=unnecessary-comprehension
 integers = [n for n in integers_raw]
 integers[1] = 12
 integers[2] = 2
@@ -26,6 +27,7 @@ print(get_output(integers_new))
 print('part 2')
 for x in range(0, 100):
     for y in range(0, 100):
+        # pylint: disable=unnecessary-comprehension
         integers = [n for n in integers_raw]
         #print(integers_raw)
         integers[1] = x
