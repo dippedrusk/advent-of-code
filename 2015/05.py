@@ -1,5 +1,3 @@
-from collections import Counter
-
 with open('input05', 'r', encoding='utf-8') as f:
     xs = f.read().strip().split()
 
@@ -19,10 +17,10 @@ def good(x):
 
 print(list(map(good, xs)).count(True))
 
-def good(x):
+def good2(x):
     g = False
     for y,z,a in zip(x[:], x[1:], x[2:]):
-        if (y == a):
+        if y == a:
             g = True
     if not g:
         return False
@@ -35,6 +33,6 @@ def good(x):
                 return True
     return False
 
-print(list(map(good, xs)).count(True))
+print(list(map(good2, xs)).count(True))
 
 # woof, ~22 mins
