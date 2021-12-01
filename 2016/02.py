@@ -51,7 +51,7 @@ grid = [[0,0,1,0,0],
 ]
 
 def valid2(x, y):
-    assert x < len(grid) and x >= 0 and y < len(grid) and y >= 0 and n((x,y)) != 0
+    assert 0 <= x < len(grid) and 0 <= y < len(grid) and n((x,y)) != 0
     return (x,y)
 
 def move2(c, d, mag=1):
