@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-from itertools import product
-from itertools import combinations
-from functools import reduce
-from collections import defaultdict
-import numpy as np
-from math import sqrt
 import re
+from collections import defaultdict
+from functools import reduce
+from itertools import combinations
+from itertools import product
+from math import sqrt
+
+import numpy as np
 
 day=20 # update me
 inp_f = f'2020day{day:02d}input'

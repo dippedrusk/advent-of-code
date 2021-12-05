@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 #lines = open('2020day11input').read().split() # every word
 #lines = open('2020day11input').readlines() # every line + \n
 #lines = [l.strip() for l in open('2020day11input')] # every line

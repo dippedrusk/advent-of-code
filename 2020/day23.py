@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 # is all this code ugly? yes
 # can i do better? also yes
 
