@@ -43,4 +43,5 @@ def game(nums, boards, markeds, first_win=True):
 
 print(f'part1: {game(nums, boards, markeds, first_win=True)}') # 40 mins 32 seconds
 
-print(f'part2: {game(nums, boards, markeds, first_win=False)}') # 45 mins 19 seconds including part 1
+print(f'part2: {game(nums, boards, markeds, first_win=False)}')
+# 45 mins 19 seconds including part 1

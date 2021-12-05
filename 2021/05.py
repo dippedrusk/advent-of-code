@@ -32,4 +32,5 @@ for x in xs:
 
 print(f'part1: {len([c for c in coords if coords[c] > 1])}') # 21 mins 47 seconds
 
-print(f'part2: {len([c for c in diag_coords if diag_coords[c] > 1])}') # 35 mins 02 seconds including part 1
+print(f'part2: {len([c for c in diag_coords if diag_coords[c] > 1])}')
+# 35 mins 02 seconds including part 1

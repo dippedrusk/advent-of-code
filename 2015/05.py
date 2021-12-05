@@ -27,6 +27,7 @@ def good2(x):
     d = {}
     for i,(y,z) in enumerate(zip(x[:],x[1:])):
         d[i] = (y,z)
+    # pylint: disable=consider-using-dict-items
     for i in d:
         for j in range(i+2,len(x)-1):
             if d[j] == d[i]:
