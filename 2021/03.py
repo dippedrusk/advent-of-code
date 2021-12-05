@@ -1,5 +1,5 @@
-from collections import defaultdict
 from collections import Counter
+from collections import defaultdict
 
 with open('input03', 'r', encoding='utf-8') as f:
     xs = f.read().strip().splitlines()
@@ -18,7 +18,7 @@ for i in ps:
     max_ += str(max(c, key=c.get))
     min_ += str(min(c, key=c.get))
 
-print(f'part1: {int(max_, 2) * int(min_, 2)}')
+print(f'part1: {int(max_, 2) * int(min_, 2)}') # 12 mins 23 seconds
 
 pss = []
 for x in xs:
@@ -41,4 +41,4 @@ def apply_func(pss, func):
 max_ = apply_func(pss, 'max')
 min_ = apply_func(pss, 'min')
 
-print(f'part2: {int(max_, 2) * int(min_, 2)}')
+print(f'part2: {int(max_, 2) * int(min_, 2)}') # 34 mins 40 seconds including part 1
