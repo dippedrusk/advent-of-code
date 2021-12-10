@@ -7,9 +7,9 @@ d = {')': 3, ']': 57, '}': 1197, '>': 25137}
 def p1(x):
     s, a = 0, []
     for t in x:
-        if t in m.keys():
+        if t in m:
             a.append(t)
-        elif t in d.keys():
+        elif t in d:
             p = a.pop()
             if m[p] != t:
                 s += d[t]
@@ -21,7 +21,8 @@ lines = []
 for x in xs:
     s, a = p1(x)
     score += s
-    if not s: lines.append(a)
+    if not s:
+        lines.append(a)
 
 print(f'part1: {score}') # 27 mins 11 seconds
 
